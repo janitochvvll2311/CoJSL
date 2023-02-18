@@ -11,7 +11,8 @@
             background-color: gray;
         }
 
-        [layout] {
+        article,
+        b {
             background-color: white;
         }
     </style>
@@ -25,7 +26,7 @@
 
     <hr />
     <h3>Layout From Server</h3>
-    <b layout="./layout.html">Layout Not Found</b>
+    <b layout="./layout_example.html">Layout Not Found</b>
 
     <hr />
     <h3>Layout Not Found Fallback</h3>
@@ -33,9 +34,9 @@
 
     <hr />
     <h3>Layout From Template</h3>
-    <b layout="layout" attrA="A" attrX="AAAA">Layout Not Found</b>
+    <b layout="layout_example" attrA="A" attrX="AAAA">Layout Not Found</b>
 
-    <template layout="layout">
+    <template layout="layout_example">
         <article attrB="B" attrX="BBBB">
             <h4>Template Layout Fragment</h4>
             <p>Some text</p>
