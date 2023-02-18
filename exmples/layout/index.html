@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Layout Module</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html {
+            background-color: gray;
+        }
+
+        [layout] {
+            background-color: white;
+        }
+    </style>
+    <script src='./index.js' type="module"></script>
+</head>
+
+<body>
+
+    <h1>Coal Javascript Library</h1>
+    <h2>Layout Module</h2>
+
+    <hr />
+    <h3>Layout From Server</h3>
+    <b layout="./layout.html">Layout Not Found</b>
+
+    <hr />
+    <h3>Layout Not Found Fallback</h3>
+    <b layout="./no-found.html">Layout Not Found</b>
+
+    <hr />
+    <h3>Layout From Template</h3>
+    <b layout="layout" attrA="A" attrX="AAAA">Layout Not Found</b>
+
+    <template layout="layout">
+        <article attrB="B" attrX="BBBB">
+            <h4>Template Layout Fragment</h4>
+            <p>Some text</p>
+        </article>
+    </template>
+
+</body>
+
+</html>
